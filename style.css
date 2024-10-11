@@ -1,0 +1,156 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2EED7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Prend la hauteur totale de la fenêtre */
+}
+
+/* Style du header */
+ header {
+            display: flex;
+            justify-content: center; /* Centrer le contenu du header */
+            align-items: center;
+            background-color: #626F47;
+            color: white;
+            padding: 10px 20px;
+            position: relative; /* Permet de positionner l'image de manière absolue */
+        }
+        header h1 {
+            margin: 0;
+        }
+        header img {
+            height: 50px; /* Ajuster la taille de l'image ici */
+            position: absolute;
+            right: 20px; /* Place l'image dans le coin droit */
+        }
+
+
+/* Conteneur principal pour les deux colonnes */
+.container {
+    display: flex;
+    flex-grow: 1; /* Permet au conteneur de prendre tout l'espace disponible */
+    overflow: hidden; /* Empêche le débordement horizontal */
+}
+
+/* Barre latérale gauche (10%) qui prend toute la hauteur */
+aside {
+    background-color: #798645;
+    width: 10%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh; /* Occuper toute la hauteur de la page */
+    position: fixed; /* Fixer la barre latérale */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Ajoute un défilement si nécessaire */
+}
+
+/* Menu de navigation dans la barre latérale */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F2EED7;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transition fluide de la couleur */
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #FFD700; /* Exemple de couleur or */
+}
+
+main {
+    margin-left: 10%; /* Ajuste le contenu principal pour laisser de la place pour la barre latérale */
+    padding: 20px;
+    background-color: #F2EED7;
+    box-sizing: border-box;
+    flex-grow: 1; /* Permet à main de prendre l'espace restant */
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+}
+
+/* Style du footer */
+footer {
+    background-color: #626F47;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; /* Prend toute la largeur */
+    position: relative; /* Permet au footer de rester en bas */
+    margin-top: auto; /* Force le footer à être en bas */
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #F2EED7;
+	font-style: italic;
+    font-size: 3em; /* Ajuste la taille selon tes préférences, ici 3em */
+    font-weight: bold; /* Optionnel : rend le texte plus gras */
+}
+
+h2 {
+    color: #626F47;
+	font-size: 2em;
+	font-style: italic;
+}
+
+h3 {
+    text-decoration: underline;
+	font-style: italic;
+}
+
+h4 {
+     color: #626F47;
+}
+
+hr {
+	color: #626F47;
+}
+
+.protection {
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+        height: auto;
+    }
+}
+
+a img {
+    display: block; /* Pour centrer l'image */
+    margin: 5px auto; /* Ajoute de la marge en haut et en bas */
+}
+
+a {
+    color: #626F47; /* Remplacez #3498db par la couleur que vous souhaitez */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Optionnel : Ajouter une couleur différente au survol */
+a:hover {
+    color: #FFD700; /* Couleur au survol, changez la couleur si nécessaire */
+    text-decoration: none; 
+}
