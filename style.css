@@ -15,19 +15,27 @@ body {
             justify-content: center; /* Centrer le contenu du header */
             align-items: center;
             background-color: #626F47;
-            color: white;
+            color: #FEFAE0;
             padding: 10px 20px;
             position: relative; /* Permet de positionner l'image de manière absolue */
         }
         header h1 {
             margin: 0;
         }
-        header img {
-            height: 50px; /* Ajuster la taille de l'image ici */
-            position: absolute;
-            right: 20px; /* Place l'image dans le coin droit */
-        }
 
+/* Style du footer */
+footer {
+            background-color: #626F47; /* Couleur de fond */
+			justify-content: center;
+			display: flex;
+            color: #FEFAE0; /* Couleur du texte */
+            text-align: center; /* Centre le texte */
+			align-items: center;
+            padding: 10px 0; /* Espacement interne */
+            width: 100%; /* Prend toute la largeur */
+            position: relative; /* Permet au footer de rester en bas */
+            margin-top: auto; /* Force le footer à être en bas */
+        }
 
 /* Conteneur principal pour les deux colonnes */
 .container {
@@ -59,7 +67,12 @@ nav ul li {
     margin-bottom: 15px;
 }
 
+ nav li {
+            margin: 20px 0; /* Pour ajouter un espace entre les éléments de la liste */
+        }
+		
 nav ul li a {
+	font-size: 22px;
     text-decoration: none;
     color: #F2EED7;
     font-weight: bold;
@@ -81,17 +94,6 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
 }
 
-/* Style du footer */
-footer {
-    background-color: #626F47;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%; /* Prend toute la largeur */
-    position: relative; /* Permet au footer de rester en bas */
-    margin-top: auto; /* Force le footer à être en bas */
-}
-
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -105,10 +107,10 @@ h2 {
     color: #626F47;
 	font-size: 2em;
 	font-style: italic;
+	text-decoration: underline;
 }
 
 h3 {
-    text-decoration: underline;
 	font-style: italic;
 }
 
@@ -154,3 +156,347 @@ a:hover {
     color: #FFD700; /* Couleur au survol, changez la couleur si nécessaire */
     text-decoration: none; 
 }
+
+p {
+            text-align: justify;
+        }
+		
+aside img {
+            width: 80%; /* Ajuste cette valeur selon la taille souhaitée */
+            height: auto;  /* Conserve les proportions de l'image */
+        }
+
+.image-moteur {
+            width: 1200px; /* Largeur du cadre */
+            height: 680px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-moteur img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-sociaux {
+            width: 1200px; /* Largeur du cadre */
+            height: 640px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-sociaux img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-url {
+            width: 800px; /* Largeur du cadre */
+            height: 230px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-url img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-domaine {
+            width: 600px; /* Largeur du cadre */
+            height: 200px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-domaine img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-frais {
+            width: 800px; /* Largeur du cadre */
+            height: 400px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-frais img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.www {
+    display: flex; /* Utilise flexbox pour mettre le texte et l'image sur la même ligne */
+    align-items: center; /* Aligne verticalement le texte et l'image */
+}
+		
+.textwww {
+    flex: 1; /* Le texte prend tout l'espace disponible à gauche */
+    margin-right: 20px; /* Espace entre le texte et le conteneur d'image */
+}
+
+.image-w3c {
+    width: 350px; /* Largeur du cadre */
+    height: 250px; /* Hauteur du cadre */
+    border: 5px solid #798645; /* Bordure du cadre */
+    padding: 10px; /* Espace entre l'image et le bord */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 10px; /* Réduit la marge à gauche du conteneur d'image */
+    margin-right: 40px; /* Ajuste cette valeur selon tes besoins */
+    background-color: #FEFAE0;
+}
+
+.image-w3c img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-pirate {
+            width: 800px; /* Largeur du cadre */
+            height: 400px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-pirate img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.fish {
+    display: flex; /* Utilise flexbox pour mettre le texte et l'image sur la même ligne */
+    align-items: center; /* Aligne verticalement le texte et l'image */
+}
+		
+.textfish {
+    flex: 1; /* Le texte prend tout l'espace disponible à gauche */
+    margin-right: 20px; /* Espace entre le texte et le conteneur d'image */
+}
+
+.image-fish {
+    width: 350px; /* Largeur du cadre */
+    height: 250px; /* Hauteur du cadre */
+    border: 5px solid #798645; /* Bordure du cadre */
+    padding: 10px; /* Espace entre l'image et le bord */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 10px; /* Réduit la marge à gauche du conteneur d'image */
+    margin-right: 30px; /* Ajuste cette valeur selon tes besoins */
+    background-color: #FEFAE0;
+}
+
+.image-fish img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-virus {
+            width: 800px; /* Largeur du cadre */
+            height: 600px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-virus img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-cpo {
+            width: 800px; /* Largeur du cadre */
+            height: 400px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-cpo img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.react {
+    display: flex; /* Utilise flexbox pour mettre le texte et l'image sur la même ligne */
+    align-items: center; /* Aligne verticalement le texte et l'image */
+}
+		
+.textreact {
+    flex: 1; /* Le texte prend tout l'espace disponible à gauche */
+    margin-right: 20px; /* Espace entre le texte et le conteneur d'image */
+}
+
+.image-react {
+    width: 350px; /* Largeur du cadre */
+    height: 100px; /* Hauteur du cadre */
+    border: 5px solid #798645; /* Bordure du cadre */
+    padding: 10px; /* Espace entre l'image et le bord */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 10px; /* Réduit la marge à gauche du conteneur d'image */
+    margin-right: 30px; /* Ajuste cette valeur selon tes besoins */
+    background-color: #FEFAE0;
+}
+
+.image-react img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.npm {
+    display: flex; /* Utilise flexbox pour mettre le texte et l'image sur la même ligne */
+    align-items: center; /* Aligne verticalement le texte et l'image */
+}
+		
+.textnpm {
+    flex: 1; /* Le texte prend tout l'espace disponible à gauche */
+    margin-right: 20px; /* Espace entre le texte et le conteneur d'image */
+}
+
+.image-npm {
+    width: 350px; /* Largeur du cadre */
+    height: 100px; /* Hauteur du cadre */
+    border: 5px solid #798645; /* Bordure du cadre */
+    padding: 10px; /* Espace entre l'image et le bord */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 10px; /* Réduit la marge à gauche du conteneur d'image */
+    margin-right: 30px; /* Ajuste cette valeur selon tes besoins */
+    background-color: #FEFAE0;
+}
+
+.image-npm img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.spa {
+    display: flex; /* Utilise flexbox pour mettre le texte et l'image sur la même ligne */
+    align-items: center; /* Aligne verticalement le texte et l'image */
+}
+		
+.textspa {
+    flex: 1; /* Le texte prend tout l'espace disponible à gauche */
+    margin-right: 20px; /* Espace entre le texte et le conteneur d'image */
+}
+
+.image-spa {
+    width: 350px; /* Largeur du cadre */
+    height: 200px; /* Hauteur du cadre */
+    border: 5px solid #798645; /* Bordure du cadre */
+    padding: 10px; /* Espace entre l'image et le bord */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 10px; /* Réduit la marge à gauche du conteneur d'image */
+    margin-right: 60px; /* Ajuste cette valeur selon tes besoins */
+    background-color: #FEFAE0;
+}
+
+.image-spa img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
+		
+.image-api {
+            width: 600px; /* Largeur du cadre */
+            height: 300px; /* Hauteur du cadre */
+            border: 5px solid #798645; /* Bordure du cadre */
+            padding: 10px; /* Espace entre l'image et le bord */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre du cadre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			border-radius: 15px;
+			margin: 20px auto;
+			background-color: #FEFAE0;
+        }
+
+.image-api img {
+            width: 100%; /* L'image occupe toute la largeur du cadre */
+            height: auto; /* Ajuste la hauteur automatiquement pour conserver le ratio */
+            max-height: 100%; /* Limite la hauteur si besoin */
+        }
